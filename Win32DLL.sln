@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33530.505
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Win32DLLTest", "Win32DLLTest\Win32DLLTest.csproj", "{72ACCF36-E667-44C2-8E08-79B059A30995}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Win32API", "Win32API\Win32API.csproj", "{85C3923A-D52C-4EFF-9F5B-83D58CD50A2D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{72ACCF36-E667-44C2-8E08-79B059A30995}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72ACCF36-E667-44C2-8E08-79B059A30995}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72ACCF36-E667-44C2-8E08-79B059A30995}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72ACCF36-E667-44C2-8E08-79B059A30995}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85C3923A-D52C-4EFF-9F5B-83D58CD50A2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85C3923A-D52C-4EFF-9F5B-83D58CD50A2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85C3923A-D52C-4EFF-9F5B-83D58CD50A2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85C3923A-D52C-4EFF-9F5B-83D58CD50A2D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A2A56B05-508B-4B21-8A8F-6FAE231AB266}
+	EndGlobalSection
+EndGlobal
