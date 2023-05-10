@@ -18,5 +18,7 @@ namespace Win32API.Numerics
         }
 
         public static Vector2Int Zero() => new Vector2Int(0, 0);
+
+        public override string ToString() => $"Coords X:{X} Y:{Y}";
     }
 }
