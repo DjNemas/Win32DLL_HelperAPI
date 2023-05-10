@@ -14,12 +14,15 @@ namespace Win32API
         public static extern int SetCursorPos(int x, int y);
 
         [DllImport("user32.dll", SetLastError = true)]
-        public static extern int GetCursorPos(out POINT point);
+        public static extern int GetCursorPos(out Point point);
 
         [DllImport("user32.dll", SetLastError = true)]
-        public static extern int GetCursorInfo(ref CURSORINFO point);
+        public static extern int GetCursorInfo(ref CursorInfo point);
 
         [DllImport("user32.dll", SetLastError = true)]
         public static extern UIntPtr GetCursor();
+
+        [DllImport("user32.dll", SetLastError = true)]
+        public static extern uint SendInput(uint inputNumber, Input[] inputArray, int sizeOfInputStructInBytes);
     }
 }

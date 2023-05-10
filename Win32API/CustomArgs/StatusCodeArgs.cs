@@ -21,7 +21,7 @@ namespace Win32API.CustomArgs
 
         public override string ToString()
         {
-            return $"Funktion {this.APIFunctionName} returned StatusCode {this.StatusCode}.";
+            return $"Funktion {this.APIFunctionName} returned StatusCode: {this.StatusCode}.";
         }
     }
 }

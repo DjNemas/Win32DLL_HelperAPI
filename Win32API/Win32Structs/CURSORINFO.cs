@@ -1,31 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.Versioning;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Runtime.InteropServices;
 
 namespace Win32API.Win32Structs
 {
-    public struct CURSORINFO
+    [StructLayout(LayoutKind.Sequential)]
+    public struct CursorInfo
     {
         public uint StrucSize;
-        public uint CursorState;
+        public CursorStates Flags;
         public UIntPtr CursorHandler;
-        public POINT MouseMonitorPosition;
+        public Point MouseMonitorPosition;
     }
 
-    public struct CursorStatesValues
+    [Flags]
+    public enum CursorStates : uint
     {
-        public static readonly uint CURSOR_HIDDEN = 0;
-        public static readonly uint CURSOR_SHOWING = 0x00000001;
-        public static readonly uint CURSOR_SUPPRESSED = 0x00000002;
-    }
-
-    public enum CursorStates
-    {
-        CURSOR_HIDDEN,
-        CURSOR_SHOWING,
-        CURSOR_SUPPRESSED
+        Cursor_Hidden = 0,
+        Cursor_Showing = 0x00000001,
+        Cursor_Suppressed = 0x00000002
     }
 }
